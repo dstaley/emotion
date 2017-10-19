@@ -20,7 +20,8 @@
     "start:site": "lerna exec --scope emotion-example-project npm run start:site",
     "build:site": "lerna exec --scope emotion-example-project npm run build:site",
     "watch": "lerna run --parallel watch",
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap",
+    "postinstall": "npm run bootstrap && npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
